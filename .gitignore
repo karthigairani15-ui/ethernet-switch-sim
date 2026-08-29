@@ -1,0 +1,9 @@
+build/
+.venv/
+*.o
+*.out
+__pycache__/
+*.pyc
+.vscode/
+data/*.csv
+plots/*.png
