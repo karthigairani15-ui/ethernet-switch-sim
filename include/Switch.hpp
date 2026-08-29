@@ -47,7 +47,9 @@ public:
     size_t table_size() const {
         return table_.size();
     }
-
+        unsigned int run_aging_sweep(uint64_t current_time) {
+        return table_.age_out(current_time);
+    }
 private:
     std::vector<unsigned int> all_ports_except(unsigned int excluded) const {
         std::vector<unsigned int> ports;
