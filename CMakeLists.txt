@@ -6,3 +6,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(simulator src/main.cpp)
 target_include_directories(simulator PRIVATE include)
+
+add_executable(unit_tests tests/test_main.cpp)
+target_include_directories(unit_tests PRIVATE include tests)
